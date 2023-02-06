@@ -22,6 +22,14 @@ export const Container = styled.div`
     left: 50%;
     transform: translateX(-50%);
   }
+  .rt-bottom {
+    top: 100%;
+    margin-top: 3px;
+  }
+  .rt-top {
+    bottom: 100%;
+    margin-bottom: 3px;
+  }
   .r-tooltip-show {
     visibility: visible !important;
   }
