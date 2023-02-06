@@ -2,10 +2,13 @@
   "name": "r-tooltip",
   "version": "1.0.0",
   "description": "tootlip sederhana untuk react js",
-  "main": "index.js",
+  "main": "src/index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Irsan Mansyur",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }

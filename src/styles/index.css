@@ -1,0 +1,40 @@
+.r-tooltip-container {
+  display: inline-block;
+  position: relative;
+}
+
+.r-tooltip {
+  --tw-bg-opacity: 0.75;
+  background: rgb(51 65 85);
+  visibility: hidden;
+  padding: 0.25rem /* 4px */;
+  border-radius: 0.25rem /* 4px */;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 0.75rem /* 12px */;
+  line-height: 1rem /* 16px */;
+  color: wheat;
+}
+
+.r-tooltip-container:hover .rt-hover {
+  visibility: visible;
+}
+
+.rt-bottom,
+.rt-top {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.rt-bottom {
+  top: 100%;
+  margin-top: 3px;
+}
+
+.rt-top {
+  bottom: 100%;
+  margin-bottom: 3px;
+}
+
+.r-tooltip-show {
+  visibility: visible !important;
+}
