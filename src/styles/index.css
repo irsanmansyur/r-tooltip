@@ -38,3 +38,9 @@
 .r-tooltip-show {
   visibility: visible !important;
 }
+
+@media (min-width: 640px) {
+  .sm\:whitespace-nowrap {
+    white-space: nowrap;
+  }
+}
