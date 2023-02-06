@@ -42,6 +42,18 @@ jobs:
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
 
+      - name: copy file
+        uses: canastro/copy-file-action@master
+        with:
+          source: 'src/components/tooltip/index.css'
+          target: 'dist/cjs/components/tooltip/index.css'
+
+      - name: copy file
+        uses: canastro/copy-file-action@master
+        with:
+          source: 'src/components/tooltip/index.css'
+          target: 'dist/esm/components/tooltip/index.css'
+
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_SECRET}}
