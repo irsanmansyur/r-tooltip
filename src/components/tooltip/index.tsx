@@ -1,5 +1,5 @@
 import React, { HTMLAttributes, useEffect, useRef } from 'react'
-import './index.css'
+import { Container } from './styled'
 type Props = HTMLAttributes<HTMLDivElement> & {
   text: string
   show?: boolean
@@ -26,7 +26,7 @@ export default function Tooltip({ text, position = 'bottom', children, event = '
   }, [event, timeOut])
 
   return (
-    <div
+    <Container
       ref={toolTipParentRef}
       className='r-tooltip-container'
       onClick={() => {
@@ -49,7 +49,7 @@ export default function Tooltip({ text, position = 'bottom', children, event = '
     >
       {children}
       <span ref={toolTipRef} className={`r-tooltip rt-${event} rt-${position}`} dangerouslySetInnerHTML={{ __html: text }} />
-    </div>
+    </Container>
   )
 }
 
