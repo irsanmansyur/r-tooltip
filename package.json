@@ -1,5 +1,5 @@
 {
-  "name": "r-tooltip",
+  "name": "rt-tooltip",
   "version": "1.0.0",
   "description": "tootlip sederhana untuk react js",
   "main": "src/index.tsx",
